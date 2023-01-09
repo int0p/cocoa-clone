@@ -88,4 +88,8 @@ body{
 일단 @keyframes에서 정의를, scale되면 25%프레임 되는곳에서 none으로 바뀌도록했다. 다른 애들은 커지는중. 
 #box_rectangle>div:nth-child(n) 에서 animation-delay를 다르게 설정하여 각 box가 다른 속도로 움직이도록했다 .
 animation의 duration과 delay, 프레임 지점으로 적당히 값 맞추어가며 조절했는데 이렇게 하는게 과연 맞을까...?
+도움받은 링크:
+- transform: https://webclub.tistory.com/619
+- animation: https://webclub.tistory.com/621 , https://velog.io/@zhd5379/TIL-14-CSS-Animation%EA%B3%BC-keyframes#animation-play-state
+- animation에서 ease 차이: https://www.codingfactory.net/10953
 */
