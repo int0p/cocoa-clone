@@ -11,60 +11,62 @@
   <body>
     <main>
         <div class = "naviTop">
-            <span> X </span>
-            <span> Playlist </span>
-            <span> </span>
+            <i class="fas fa-times fa-lg"></i>
+            <h2>Playlist</h2>
+            <div></div>
         </div>
         <div class = "box--music">
-            <div class = "music__img">
+            <div class = "music__img" style = "background-color: orange;" >
+                <i class="fas fa-thin fa-image fa-3x"></i>
             </div>
-            <div class = "music__intro">
+            <div class = "music__intro-alignColumn">
                 <h1>Random Love</h1>
-                <h5>by Divay Kapoor</h5>
+                <h4>by Divay Kapoor</h4>
             </div>
         </div>
-        <div class = "button--naviMusic">
-            <button type="button">
-                <!-- icon play -->
-                Play
+        <div class = "btn__naviMusic">
+            <button type="button" class="btn__naviMusic--shadow">
+                <i class="fas fa-regular fa-play "></i>
+                <h3>Play</h3>
             </button>
-            <button type="button">
-                <!--icon heart-->
+            <button type="button" class="btn__naviMusic--shadow">
+                <i class="fas fa-regular fa-heart fa-lg"></i>
             </button>
-            <button type="button">
-                +
+            <button type="button" class="btn__naviMusic--shadow">
+                <i class="fas fa-solid fa-plus fa-lg"></i>
             </button>
         </div>
-        <div class = "list--music">
-            <div class = "box--music">
-                <div class = "music__img--mini"></div>
-                <div class = "music__intro--mini">
+        <ul class = "list--music">
+            <li class = "box--music">
+               <div class = "music__img--mini" style = "background-color: tomato"></div>
+                <div class = "music__intro-alignColumn">
                     <h3>Matargasti</h3>
                     <h5>Mohit Chauhan</h5>
-                </div>
-            </div>
-            <div class = "box--music">
-                <div class = "music__img--mini"></div>
-                <div class = "music__intro--mini">
+                </div> 
+            </li>
+            <li class = "box--music">
+               <div class = "music__img--mini" style=" background-color: pink"></div>
+                <div class = "music__intro-alignColumn">
                     <h3>Attitude</h3>
                     <h5>Lewis OfMan º Attitude</h5>
-                </div>
-            </div>
-            <div class = "box--music">
-                <div class = "music__img--mini"></div>
-                <div class = "music__intro--mini">
+                </div> 
+            </li>
+            <li class = "box--music">
+               <div class = "music__img--mini" style="background-color: blue"></div>
+                <div class = "music__intro-alignColumn">
                     <h3>Try Everthing</h3>
                     <h5>Shakira º Zootopia</h5>
-                </div>
-            </div>
-            <div class = "box--music">
-                <div class = "music__img--mini"></div>
-                <div class = "music__intro--mini">
+                </div> 
+            </li>
+            <li class = "box--music">
+               <div class = "music__img--mini" style = "background-color: darkturquoise;"></div>
+                <div class = "music__intro-alignColumn">
                     <h3>Sunflower</h3>
                     <h5>Joseph Vincent º Sunflower</h5>
-                </div>
-            </div>
-        </div>
+                </div> 
+            </li>
+        </ul>
+        
     </main>
   </body>
 </html>

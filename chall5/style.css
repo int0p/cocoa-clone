@@ -5,80 +5,128 @@
 body{    
     background-color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;  
 }
+
 main{
     border: 5px solid darkturquoise;
     background-color: white;
     padding: 10px;    
-    width: 300px;
-    height: 500px;
+    width: 350px;
+    height: 650px;
 }
+
 .naviTop{
+    height: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 10px;
 }
+.naviTop>i:first-child{
+    width: 20px;
+    height: 20px;
+    color: black;
+}
+
+.btn__naviMusic{
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn__naviMusic--shadow{
+    border-bottom: 5px solid black;
+}
+.btn__naviMusic button:nth-child(1){
+    width: 50%;
+    height: 70%;
+    border-radius: 20%;
+}
+.btn__naviMusic button:nth-child(2){
+    width: 20%;
+    height: 70%;
+    border-radius: 50%;
+}
+.btn__naviMusic button:nth-child(3){
+    width: 20%;
+    height: 70%;
+    border-radius: 50%;
+}
+
 .box--music{
-    height: 25%;
+    height: 20%;
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
 }
 
+.list--music{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
 .music__img{
     border: 2px solid black;
     border-radius: 20%;
-    background-color: orange;
-    width: 50px;
-    height: 50px;
+    width: 35%;
+    padding-top: 10%;
+    padding-bottom: 10%;
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.music__img i{
+    color: white;
 }
 .music__img--mini{
     border: 2px solid black;
     border-radius: 20%;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin: 10px;
 }
-.box--music>.music__img--mini:nth-child(1){
-    background-color: tomato;
-}
-.box--music>.music__img--mini:nth-child(2){
-    background-color: pink;
-}
-.list--music .box--music>:nth-child(3){
-    background-color: blue;
-}
-.music__img--mini:nth-child(4){
-    background-color: darkturquoise;
-}
-.music__intro{
+.music__intro-alignColumn{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
 }
-.button--naviMusic{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+/* 글자 크기 설정 */
+h1{
+    font-size: 2em;
+    font-weight: bold;
 }
-.list--music{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+h2{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+h3{
+    font-size: 1.3em;
+    font-weight: bold;
+    display: inline;
+}
+h4{
+    font-size: 1.1em;
+}
+h5{
+    font-size: 0.83em;
+    color: darkgray;
 }
   /*
   참고 자료
   BEM: https://nykim.work/15 --> 적용하려고 해봤지만 너무 혼란스러웠다. 
-
+  Selector : https://code.tutsplus.com/ko/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+  반응형으로 정사각형 만드는 방법(height를 width에 대해 설정): https://nuhends.tistory.com/69 
+   --> paddig top만 사용하면 .music__img에서 이미지 아이콘을 center에 둘 수 없음. 따라서, padding-top과 padding-bottom으로 나눔. 
   */
